@@ -1,0 +1,52 @@
+Filter commands:											Date:15/11/2021
+===========================================================================================================================
+
+1. Simple filters:
+ #head --> To disply the first 10 lines ----> #head /etc/passwd
+ #head -2 ----> To disply first 2 lines ----> #head -2 /etc/passwd
+ #tail ---> To disply the last 10 lines ----> #tail /etc/passwd
+ #tail -5 ----> To display last 5 line --->  #tail -5 /etc/passwd
+ #tail -f to check recent logs -----> #tail -f/var/logs/messages
+**** generally #tail is used to check logs 
+ #wc ----> to check the count  -----------> #wc /etc/passwd
+                                            #wc -l(for lines)
+					    #wc -w(for words)
+					    #wc -c(for characters)
+ #cut ----> To cut and display characters/block of characters and fields ---> #cut -c5 /etc/passwd
+									     #cut -c5-8 /etc/passwd
+ 									     #cut -cut -f1 -d ":" /etc/passwd
+
+ #diff ---> To show the difference between two files ------> #diff sample1 sample2 
+ #sdiff ---> to disply Two files side by side	------------> #sdiff sample1 sample2
+ #cmp -----> To compare character by character -------------> #cmp sample1 sample2 
+ #uniq ----> To see the uniq line which doesnot show duplicated line ----> #uniq sample1
+									   #uniq -d sample(To see what are duplicated)
+									   #uniq -D sample(To see how many times lines are duplicate) 	
+ #tr ---> To translate from small letters to capital letters -----> #tr '[a-z]' '[A-Z]' <sample
+
+***** > ---> is used to input purpose
+      < ----> is used to read output
+ #man command name ---> to get description of commands
+ #more & #less ---> To scroll a file -------> #more/less /etc/passwd ---> enter --> line by line, Spacebutton ---> page by page , f --> to move forward page, b---> backward page,q--> to quit
+ #sort ---> To sort text in alphabetical order ---> #sort filename
+
+2. Advanced filters:
+ #grep(Global regular expression)---> To search string or word or pattern ---> #grep this filename
+									       #grep -w this filename
+									       #grep 'this' filename
+									       #grep -i(ignore casesensitive)'this' filename
+									       #grep -n(line number) 'this' filename	
+ 									       #grep -c(count) 'this' filename
+									       #grep -v(Excludes the word containing and shows remaining) 'this' filename
+									       #grep ^'this' filename ---> starting with the word
+									       #grep 'this'$ filename --->ending with the word	 
+
+ #sed ----> to disply or delete the line while viewing the file and also used to replace ---> #sed -n 1p filename ---> shows first line
+											      #sed -n 1,3p filename ---> shows 1st to 3rd line
+											      #sed -n "1p(enter)3p" file1 ---> shows only 1st line and 3rd line
+											      #sed 's(search)/devops(old word)/linux(new word)/g(globally)' filename ---> To replace devops with linux
+                                                                                              #sed -n '1d' filename --> deletes 1st line and shows remaining
+											      #sed -i 's/old/new/g' filename ----> to replace and update the actual file
+											      #sed 's/old/new/ig' filename ---> To find and replace without casesensitve	 	
+			
+

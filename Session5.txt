@@ -1,0 +1,52 @@
+VI editor 					Session-5						Date:22/Nov.2021
+=============================================================================================================================
+#vi/vim filename ---> To open a file in vi editor, mouse does not work here
+
+****vi editor is used to edit a text file and this is the widely used editor among all. There are some more like emac and nano
+
+There are 3 modes in this editor:
+
+1. command mode ---> Use commands to edit like i,k,j,d,dd,dw,p. Press ESC to get back to command mode
+2. Edit mode ------> used to edit files like add text ,delete,copy,paste this is often called as INSERT Mode. Need to press i to enter or any above given commands, it automatically get into insert mode
+3. Execute/colon mode ----> Used to save and quit files. Need press :(colon) to enter in to this mode
+
+
+ESC l --> Move to right
+ESC h --> Move to left
+ESC j --> Move down
+ESC k --> Move up
+ESC $ or ESC G --> ove to end of the line
+ESC ^ or ESC H --> Move to start of the line
+ESC W --> Move to next word
+ESC b --> 1 word Back
+ESC M --> Move to middle of the line
+ESC yy --> To copy the line
+ESC p --> To paste
+ESc yw --> To copy a word
+ESC yl --> To copy a character
+ESC dd --> To delete a line
+ESC dw --> To delete a word
+ESC x --> To delete curosr positioned character
+ESC X --> To delete the cursor positioned before character
+ESC R --> To replace a line
+ESC r --> To replace a character
+ESC u --> To undo the previous operation
+Esc:se nu --> To set line numbers
+Esc:se none --> To remove line numbers
+Esc:5 --> To move to 5th line
+Esc:/word --> To search for a perticular word
+
+
+Esc:wq! --> To save and quit forcebly
+Esc:wq --> To save and quit
+Esc:q --> quit without saving
+Esc:x --> To save and quit
+shift zz --> To save and quit
+===========================================================================================================================
+
+
+
+
+
+
+

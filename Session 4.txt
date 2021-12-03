@@ -1,0 +1,82 @@
+Filter commands:												Date:16/11/21
+=============================================================================================================================
+
+Find command ---> Used for both documents and files
+=====================================================
+#find /toot -samplename ---> iy shows path of the file
+#find / -samplename .html---> To search type of file in the entire system
+#find /root -size 100m ---> to search for files with sizes
+#find / -size 100m ---> to search in the entire system
+#find /root -perm 644 --> To search for the files with permissions
+#find find /root -type l ---> to search for link files
+#find /root type f --> to search for the files only
+#find/root -ctime 1(days)-->creation time
+#find/root -mtime 1---->modified time
+#find/root -atime 1---->access time
+#find/root -cmin 1(one min)
+#find/tmp -name core -type f -print I xargs /bin/rm -f ----> find core in tmp and delete 
+#xargs and exec ---> we execute the output using these 2 commands
+
+#awk ---> Used to cut and display the required fields --->#awk -F':' ,{print $1}' </etc/passwd
+						 #awk -F':' ,{print $1}' </etc/passwd^C for directory
+						 
+RPM(Red Hat Package manager)
+==========================================================
+Softwares are called as packages in linux
+
+.rpm --->extension in linux for al softwares
+
+rpm format:
+ package name -- Version --- release -- architecture -- extension
+Ex: jenkins-2.222.4-1.1.noarch.rpm
+
+=============================================================
+
+Download the package :
+
+#wget ---> To download from internet ---->#wget (download url
+#curl ----> to download from internet --->
+
+using rpm tool we can install,uninstall,query,delete,get info of the package.
+
+Verify package is there or not --> #rpm -q(query) jenkins
+				   #rpm -q tree
+===============================================================
+Installing package manually: for Redhat,centos,fedro
+
+#rpm -ivh (package address)
+i==>install, v-verbose, h-hash progress	
+#rpm -qi(query information) (full name of package)-->to get package info
+#rpm -ql(list) package full name ---> to see the files in the package 
+#rpm -qR(resolvers,dependency packages) package full name ---> to see the dependencies of the package
+#rpm -Uvh ---> to upgrade the package
+#rpm -e(erase) Package full name ----> to uninstall
+#rpm -ivh packagename --no-dep ---> without looking for dependencies installs the package
+*****rpm is a manually downloading and installing method
+==================================================================
+
+in Ubuntu we use dpkg and package extension is .deb
+==================================================================
+#dpkg-i packagename ---> to install
+#dpkg -l packagename ---> to list files in package/to query the package
+#dpkg -r packagename ---> To uninstall
+#dpkg purge packagename ---> to uninstall
+=========================================================================
+
+Installing online method:
+
+packages are getting from repository of yum : /ete/yum.repos.d/
+yum ---> online package manager
+#yum install package name---> #yum install httpd
+#yum remove package name ---> to uninstall
+#yum update httpd ---> to update package
+#yum list installed ---> to know all installed packages in system
+#yum list installed httpd --> to know specific package is installed or not
+
+In Ubuntu
+=========
+we use apk or apt-get instead of yum
+
+
+
+
