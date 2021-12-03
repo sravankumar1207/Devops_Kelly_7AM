@@ -1,0 +1,81 @@
+File permission changes											Date:13-11-2021
+=============================================================================================================================
+The surface area of a hard disk is a block
+1 block = 2mb nearly
+Storage in linux is in the form of blocks or sectors
+
+ls:
+===========================================================
+#ls - l ---> Long list
+starting d is directory
+starting wih - is file
+
+#ls -lt --> display according to the time new to old
+#ls -ltr(reverse) --> display according to the time old to new
+#ls -lh(size human readable) - display size of the file in human readable format
+#ls -ld File or directory name ---> Perticular file or directory information
+===================================================================================
+
+Three types of users:
+1.Owner - Who created file
+2.Group - Member of group
+3.others - Not a owner/not a group member
+===================================================================================
+
+Permissions are two types
+
+We use #chmod ---> To change permissions
+
+1.With numbers:
+
+     Read -r 4
+     Write -w 2
+     Execute -x 1
+Ex: Read write execute(rwx) --> 4+2+1 = 7
+#chmod 765 Filename ---> To change permissions
+   
+2.With symbols:
+    Owner - u
+    Group - g
+    Others - o
+#chmod u=rwx,g=rx,o=r filename
+
+Default - Directory -  755
+          File -       644
+
+
+#cat/etc/passwd ----> This file has all linux users information
+#cat/etc/group ------> all existing groups on linux system
+
+
+
+User name --- Encrypted passord info --- UID --- GID --- Description --- Home dir --- Shell
+=========================================================================================================
+
+
+Create user ---> #useradd username
+Change permission ---> chmod 777 filename/directory
+Change owner ----> #chown newusername filename/directory
+Change group ---> #chgrp groupname file/directory
+=============================================================================================
+
+Filter commands:
+
+1.Simple filter:
+ head 
+ tail
+ wc
+ cut
+ diff
+ sdiff
+ cmp
+ uniq
+ tr
+2. Advance filter:
+ grep
+ sed
+ find
+ awk
+
+
+
