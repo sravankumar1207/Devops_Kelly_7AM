@@ -1,0 +1,43 @@
+													Date:24/Nov/21
+=============================================================================================================================
+
+#service httpd status --> To see a status of the service
+#service httpd start --> To start a service
+#systemctl status httpd --> To see status of the service
+#systemctl start httpd ---> To start status
+#ps -ef ----> To see the processes running on the system
+ PID --> Process ID , PPID --> Parent Process ID. c-->priority STIME -> Starte time , TTY--> Terminal, TIME -->Time taken to execute, 
+
+
+#ps -ef | grep httpd ---> To check perticular related process 
+#kill -9 ---> To kill process -->#kill -9 3308(PID)
+#pkill -9 httpd ---> To kill with name
+#netstat -natpl | grep 80 ---> To know listening port
+#netstat -natpl | grep httpd 
+#netstat -r ---> Route information
+#cat etc/services ---> To know all port numbers and services relavant to the ports
+#cat etc/services | grep -w ssh ---> To know ssh port number (Specific)
+#cp ---> To copy ---> #cp -r(recursive) dira dirb 
+#mv ----> To move/rename ---> mv dira dirb ----> Next command works only after this command executes
+
+To run command in background we use & ---> mv dira dirb &^C
+#bg --To see background
+#ifconfig ----> To see IP address of system
+
+NIC Logical names ---> Network interface card
+eth0
+eth1
+eno
+en1
+
+#cat /etc/redhat-release ---> To know which operating system we are using ---Redhat/centos
+#cat /etc/*-release ---> in ubuntu/amazon 
+#fg FID ---> to push process to foreground
+#uname -m ---> OS Type
+#uname -r ----> To see linux kernal version
+#uname -a ----> to see architecture 
+#user -G Devops demouser --> adding group members
+#id username ---> To see member of groups
+
+
+

@@ -1,0 +1,76 @@
+Linux class 1 - Folder structure and Basic commands      							12/Nov/2021
+===============================================================================================
+/(root)
+
+/bin- Binary directory - normal user commands ex: ls,rm,cat 
+/sbin - system binary directory-Admin command ex: useradd,shutdown,mount
+/usr - manual page (help)
+/etc - configuration 
+/opt - install 3rd party softwares ex: java, oracle,maven
+/var - logs(system genrated message used for root cause and analysis), mails,messages
+/home - Normal user home directory - /home/user 1 or /home/user 2 or /home/user 3
+/root - root user home diretory 
+/dev - logical devices information ex: disk partition -/dev/sda or /dev/sdp or /dev/sd3
+/media - To access removable devices ex: usb,dvd,pendrives
+/temp - To download and to share
+/boot - kernal configuration
+/mnt - temporary mount point
+
+Creation of files
+==================================================================================================
+Two types of files:
+
+1. Regular files:
+ -Text files,Directories
+
+2. Special files
+ -Videos,Devices
+
+3 Commands used to create files
+
+1.cat: #cat>filename ----> Text(This is my first line using cat) --->ctrl+d(save and quit)----> to view file 
+#cat filename -----> to append the data to file #cat>>filename--->enter text--->ctrl+d(save and quit)
+Modification is not possible we use only create view and append
+
+2.touch: To create empty files #touch file1 file2 file3----->
+
+3 Types of Editors are there in linux
+1.vi: #vi filename----->can edit file--->Esc-->i - is to inster text in vi editor, then add text(this is my first file using vi in linux) ----> Esc-->:wq!is to save and quit the file from editor, we can't move curser we can use arrows
+2.emac:
+3.nano:
+
+Creation of directories:
+======================================================================================================
+
+we use #mkdir filename ---->Directory is nothing but a folder
+       #mkdir -p Devops/linux/examples/basics is to create directories recursively 
+
+#cd --> to move to home directory
+#cd directory_name- Is used for change directory
+#cd .. ---> to jump one directory back
+#cd ../.. ---> to jump two directories back
+#cd /opt or /home to give path without / it will look in local directory
+#pwd - Is used for know PRESENT WORKIGN DIRECTORY
+
+ls
+======================================================================================================
+#ls - Is used to see list content files,directories etc.
+#ls -a --> to see hidden files and directories which are starting with .
+#ls -l ---> to see long list
+#ls -s is to list files with size 
+
+**** To create hidden files use . before file name ex: cat>.filename
+
+
+Remove a file:
+=======================================================================================================
+#rm file1
+#rm -f file1 --> to remove forcefully
+
+we can remove single or multiple at the same time
+
+Remove a directory:
+========================================================================================================
+
+#rmdir direname---> only to remove empty directory
+#rm -rf direname ---> To remove non-empty directories
