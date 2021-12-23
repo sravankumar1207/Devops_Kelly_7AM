@@ -2,7 +2,7 @@ Linux class 1 - Folder structure and Basic commands      							12/Nov/2021
 ===============================================================================================
 /(root)
 
-/bin- Binary directory - normal user commands ex: ls,rm,cat 
+/bin- Binary directory - normal user commands ex: ls,rm,cat gjfnkjfjgdffgj
 /sbin - system binary directory-Admin command ex: useradd,shutdown,mount
 /usr - manual page (help)
 /etc - configuration 
